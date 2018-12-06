@@ -9,7 +9,7 @@ const client = new Discord.Client();
 
 client.on("message", message => {
 
-            if (message.content.startsWith("$bc")) {
+            if (message.content.startsWith("F!bc")) {
         if(message.channel.type === 'dm') return message.reply('This Command Is Only For Server!');
                          if (!message.member.hasPermission("ADMINISTRATOR"))  return;
   let args = message.content.split(" ").slice(1);
@@ -52,9 +52,9 @@ client.on("message", message => {
 
 var prefix = "w";
 
-var adminprefix = "$";
+var adminprefix = "F!";
 
-const developers = ["272808689688248320","323888904602124299"]
+const developers = ["454457140220919818","323888904602124299"]
 
 client.on('message', message => {
 
